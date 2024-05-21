@@ -219,13 +219,13 @@ h3 {
   background-repeat: no-repeat;
   background-size: cover;
   background-blend-mode: soft-light;
-  justify-items: center;
 }
-.section--hero > div {
+:is(.section--hero, .section--about) > div {
   width: clamp(18rem, 70%, 46rem);
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
   gap: 2rem;
+  justify-self: center;
 }
