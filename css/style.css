@@ -182,41 +182,38 @@ h3 {
 }
 /* navbar button */
 .navbar__button {
+  width: 50px;
   display: none;
-  color: rgba(0, 0, 0, 0.65);
-  fill: rgba(0, 0, 0, 0.65);
   background-color: transparent;
   border: 1px rgba(0, 0, 0, 0.15) solid;
-  padding: 0.5rem;
+  padding: 0.5rem 1rem;
   border-radius: 0.5rem;
-}
-.navbar__button svg {
-  width: 3rem;
-  height: 1.5rem;
+  cursor: pointer;
 }
 .verticle-menu {
   width: 100vw;
-  background-color: var(--prim-orange);
+  background-color: white;
   display: flex !important;
   flex-flow: column nowrap;
   align-items: flex-start;
-  gap: 2rem;
   position: absolute;
-  top: 85px;
-  left: -7.5vw;
-  right: 0;
-  padding-left: 7.5vw;
-  padding-bottom: 2rem;
+  top: var(--header-height);
+  left: -12vw;
+  padding-left: 12vw;
+  padding-bottom: 1rem;
+}
+.verticle-menu a {
+  color: var(--text-grey);
 }
 /* header scrolled styling */
-.header__scrolled {
+.header--white {
   box-shadow: 0 0.5px 10px rgba(0, 0, 0, 0.15);
   background-color: white;
 }
-.header__scrolled a {
+.header--white a {
   color: black;
 }
-.header__scrolled a:hover {
+.header--white a:hover {
   color: var(--prim-orange);
 }
 
@@ -262,4 +259,21 @@ h3 {
 .boxes svg {
   width: 40px;
   fill: var(--prim-orange);
+}
+
+@media screen and (max-width: 991px) {
+  .navbar__ul {
+    display: none;
+  }
+  .verticle-menu {
+    display: block;
+  }
+  .navbar__button {
+    display: block;
+  }
+}
+@media screen and (max-width: 349px) {
+  .logo {
+    font-size: 1rem;
+  }
 }
