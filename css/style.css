@@ -143,6 +143,7 @@ h3 {
   left: 0;
   min-width: 100%;
   padding: 1.5rem 0;
+  transition: background-color 0.3s ease-in-out;
 }
 .navbar {
   display: flex;
