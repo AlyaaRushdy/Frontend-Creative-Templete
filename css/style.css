@@ -168,7 +168,7 @@ h3 {
   gap: 1.5rem;
 }
 .active {
-  color: var(--prim-orange);
+  color: var(--prim-orange) !important;
 }
 /* navbar button */
 .navbar__button {
@@ -198,15 +198,15 @@ h3 {
   padding-left: 7.5vw;
   padding-bottom: 2rem;
 }
-/* navbar scrolled styling */
-.navbar__scrolled {
+/* header scrolled styling */
+.header__scrolled {
   box-shadow: 0 0.5px 10px rgba(0, 0, 0, 0.15);
   background-color: white;
 }
-.navbar__scrolled a {
+.header__scrolled a {
   color: black;
 }
-.navbar__scrolled a:hover {
+.header__scrolled a:hover {
   color: var(--prim-orange);
 }
 
