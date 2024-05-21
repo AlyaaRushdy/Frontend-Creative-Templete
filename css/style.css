@@ -5,9 +5,9 @@
   /* || COLORS */
   --prim-orange: rgb(244, 98, 58);
   --text-offwhite: rgba(255, 255, 255, 0.75);
-  --grey: rgb(33, 37, 41);
+  --text-grey: rgb(108, 117, 125);
+  --bg-grey: rgb(33, 37, 41);
   --copyrights-bg-color: rgb(248, 249, 250);
-  --copyrights-text-color: rgb(108, 117, 125);
 
   /* || Typography */
   --h1-font-size: clamp(2.25rem, 1.8929rem + 1.7857vw, 3.5rem);
@@ -53,6 +53,9 @@ ol {
   color: var(--text-offwhite);
   fill: var(--text-offwhite);
 }
+.color-textGrey {
+  color: var(--text-grey);
+}
 .bg-white {
   background-color: white;
 }
@@ -60,10 +63,16 @@ ol {
   background-color: var(--prim-orange);
 }
 .bg-grey {
-  background-color: var(--grey);
+  background-color: var(--bg-grey);
 }
 .text-center {
   text-align: center;
+}
+.fw-normal {
+  font-weight: normal;
+}
+.disp-inlineBlock {
+  display: inline-block;
 }
 
 /* ||General Styling */
@@ -91,8 +100,8 @@ body {
   grid-column: full-width;
 }
 .section {
-  padding-top: 6rem;
-  padding-bottom: 6rem;
+  padding-top: 7rem;
+  padding-bottom: 7rem;
 }
 .section > *:not(:last-child) {
   margin-bottom: 1.5rem;
@@ -229,4 +238,28 @@ h3 {
   align-items: center;
   gap: 2rem;
   justify-self: center;
+}
+
+.boxes {
+  margin: 2.5rem 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: first baseline;
+  row-gap: 2rem;
+  column-gap: 1.5rem;
+}
+.boxes div {
+  font-size: 1rem;
+  min-width: 14rem;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  flex: 1;
+}
+.boxes svg {
+  width: 40px;
+  fill: var(--prim-orange);
 }
