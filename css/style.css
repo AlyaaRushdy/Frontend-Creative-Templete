@@ -209,3 +209,23 @@ h3 {
 .navbar__scrolled a:hover {
   color: var(--prim-orange);
 }
+
+/* Hero Section */
+.section--hero {
+  min-height: 100vh;
+  padding-top: 8rem;
+  background: url("../images/hero background.jpg") rgb(92, 77, 66);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: soft-light;
+  justify-items: center;
+}
+.section--hero > div {
+  width: clamp(18rem, 70%, 46rem);
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
