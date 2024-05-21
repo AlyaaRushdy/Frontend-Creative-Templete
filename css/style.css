@@ -1,0 +1,82 @@
+/* || VARIABLES */
+:root {
+  --header-height: 75px;
+
+  /* || COLORS */
+  --prim-orange: rgb(244, 98, 58);
+  --text-offwhite: rgba(255, 255, 255, 0.75);
+  --grey: rgb(33, 37, 41);
+  --copyrights-bg-color: rgb(248, 249, 250);
+  --copyrights-text-color: rgb(108, 117, 125);
+
+  /* || Typography */
+  --h1-font-size: clamp(2.25rem, 1.8929rem + 1.7857vw, 3.5rem);
+  --h2-font-size: clamp(1.5rem, 1.3571rem + 0.7143vw, 2rem);
+  --h3-font-size: clamp(1.35rem, 1.3071rem + 0.2143vw, 1.5rem);
+  --regular-font-size: clamp(1rem, 0.9286rem + 0.3571vw, 1.25rem);
+  --buttons-font-size: 0.85rem;
+}
+
+/* || RESET */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+ul,
+ol {
+  list-style: none;
+}
+
+/* ||UTILITY CLASSES */
+.capitalize {
+  text-transform: capitalize;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+.bold {
+  font-weight: 600;
+}
+.color-white {
+  color: white;
+  fill: white;
+}
+.color-primary {
+  color: var(--prim-orange);
+  fill: var(--prim-orange);
+}
+.color-textOffwhite {
+  color: var(--text-offwhite);
+  fill: var(--text-offwhite);
+}
+.bg-white {
+  background-color: white;
+}
+.bg-primary {
+  background-color: var(--prim-orange);
+}
+.bg-grey {
+  background-color: var(--grey);
+}
+.text-center {
+  text-align: center;
+}
+.button {
+  font-size: var(--buttons-font-size);
+  padding: 1.5rem 2.5rem;
+  border-radius: 2rem;
+}
+.button.button--primary {
+  background-color: var(--prim-orange);
+  color: white;
+}
+.button.button--white {
+  background-color: white;
+  color: black;
+  padding: 1.5rem 2.5rem;
+  border-radius: 2rem;
+}
