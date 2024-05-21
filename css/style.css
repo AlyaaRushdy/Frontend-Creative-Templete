@@ -65,6 +65,48 @@ ol {
 .text-center {
   text-align: center;
 }
+
+/* ||General Styling */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: var(--header-height);
+}
+body {
+  font-family: "Merriweather Sans", Arial, "Noto Sans", sans-serif;
+  font-size: var(--regular-font-size);
+  line-height: 1.25;
+}
+.content-grid {
+  display: grid;
+  grid-template-columns:
+    [full-width-start] 12vw [content-start] minmax(0, 1fr)
+    [content-end] 12vw [full-width-end];
+  align-content: center;
+  justify-content: center;
+}
+.content-grid > * {
+  grid-column: content;
+}
+.content-grid > .full-width {
+  grid-column: full-width;
+}
+.section {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+.section > *:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+h1 {
+  font-size: var(--h1-font-size);
+}
+h2 {
+  font-size: var(--h2-font-size);
+}
+h3 {
+  font-size: var(--h3-font-size);
+}
+
 .button {
   font-size: var(--buttons-font-size);
   padding: 1.5rem 2.5rem;
@@ -79,4 +121,16 @@ ol {
   color: black;
   padding: 1.5rem 2.5rem;
   border-radius: 2rem;
+}
+.divider {
+  width: clamp(3rem, 35%, 5rem);
+  height: 3px;
+  border-top: 0.5px black solid;
+  justify-self: center;
+}
+.divider.divider--primary {
+  background-color: var(--prim-orange);
+}
+.divider.divider--white {
+  background-color: white;
 }
