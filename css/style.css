@@ -134,3 +134,78 @@ h3 {
 .divider.divider--white {
   background-color: white;
 }
+
+/* Nav Bar */
+.header {
+  background-color: transparent;
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  padding: 1.5rem 0;
+}
+.navbar {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+.header a {
+  color: var(--text-offwhite);
+}
+.header a:hover {
+  color: white;
+}
+.logo {
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+.navbar__ul {
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+.active {
+  color: var(--prim-orange);
+}
+/* navbar button */
+.navbar__button {
+  display: none;
+  color: rgba(0, 0, 0, 0.65);
+  fill: rgba(0, 0, 0, 0.65);
+  background-color: transparent;
+  border: 1px rgba(0, 0, 0, 0.15) solid;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+.navbar__button svg {
+  width: 3rem;
+  height: 1.5rem;
+}
+.verticle-menu {
+  width: 100vw;
+  background-color: var(--prim-orange);
+  display: flex !important;
+  flex-flow: column nowrap;
+  align-items: flex-start;
+  gap: 2rem;
+  position: absolute;
+  top: 85px;
+  left: -7.5vw;
+  right: 0;
+  padding-left: 7.5vw;
+  padding-bottom: 2rem;
+}
+/* navbar scrolled styling */
+.navbar__scrolled {
+  box-shadow: 0 0.5px 10px rgba(0, 0, 0, 0.15);
+  background-color: white;
+}
+.navbar__scrolled a {
+  color: black;
+}
+.navbar__scrolled a:hover {
+  color: var(--prim-orange);
+}
