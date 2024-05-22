@@ -65,6 +65,9 @@ ol {
 .bg-grey {
   background-color: var(--bg-grey);
 }
+.bg-copyrights {
+  background-color: var(--copyrights-bg-color);
+}
 .text-center {
   text-align: center;
 }
@@ -73,6 +76,17 @@ ol {
 }
 .disp-inlineBlock {
   display: inline-block;
+}
+.px-2r {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.pb-xs {
+  padding-bottom: 0.5rem;
+}
+.my-1r {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 /* ||General Styling */
@@ -235,6 +249,7 @@ h3 {
   justify-self: center;
 }
 
+/* services section */
 .boxes {
   margin: 2.5rem 0;
   display: flex;
@@ -259,6 +274,7 @@ h3 {
   fill: var(--prim-orange);
 }
 
+/* Portfolio section */
 .portfolio_image-container {
   display: flex;
   flex-flow: row wrap;
@@ -278,6 +294,51 @@ h3 {
   margin-bottom: 2.5rem !important;
 }
 
+/* contact section */
+.section--contact {
+  width: 100%;
+  max-width: 550px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  justify-self: center;
+}
+.section--contact form {
+  width: 100%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-self: center;
+  gap: 1.5rem;
+}
+.contact__input {
+  width: 100%;
+  font-size: 1rem;
+  padding: 1.25rem 0.75rem;
+  border: 1px solid rgb(206, 212, 218);
+  outline: none;
+  border-radius: 0.5rem;
+}
+.contact__input:is(textarea) {
+  resize: vertical;
+}
+.contact__input:focus {
+  outline: none;
+  border: var(--prim-orange) 1px solid;
+  box-shadow: 0 0 5px var(--prim-orange);
+}
+
+/* footer section */
+.footer {
+  padding: 3rem 0;
+}
+.footer p {
+  color: var(--text-grey);
+  font-size: 0.9rem;
+  font-weight: bold;
+}
 @media screen and (max-width: 991px) {
   .navbar__ul {
     display: none;
