@@ -1,6 +1,6 @@
 This is an implementation of the [Creative](https://startbootstrap.com/previews/creative) templete by Start Bootstrap
 
-<!-- ## Screenshot
+## Screenshot
 
 <table>
  <tr>
@@ -15,7 +15,7 @@ This is an implementation of the [Creative](https://startbootstrap.com/previews/
 
 ## Links
 
-- Live Site URL: [Netlify](https://freelancertempletesb.netlify.app) -->
+- Live Site URL: [Netlify](https://stratbootstrap-creativetemplate-alyaa.netlify.app/)
 
 ## Built with
 
