@@ -242,17 +242,17 @@ h3 {
   justify-content: space-around;
   align-items: first baseline;
   row-gap: 2rem;
-  column-gap: 1.5rem;
+  column-gap: 1%;
 }
 .boxes div {
   font-size: 1rem;
-  min-width: 14rem;
+  width: 24%;
+  max-width: 15rem;
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
   gap: 1rem;
-  flex: 1;
 }
 .boxes svg {
   width: 40px;
@@ -288,6 +288,10 @@ h3 {
   .navbar__button {
     display: block;
   }
+  .boxes div {
+    width: 49%;
+    max-width: none;
+  }
   .portfolio__img {
     width: calc(1 / 2 * 100%);
   }
@@ -295,6 +299,10 @@ h3 {
 @media screen and (max-width: 576px) {
   .portfolio__img {
     width: 100%;
+  }
+  .boxes div {
+    width: 100%;
+    max-width: none;
   }
 }
 @media screen and (max-width: 349px) {
